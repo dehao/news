@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20131206121839) do
     t.text     "text"
     t.datetime "created_at",                                           :null => false
     t.datetime "updated_at",                                           :null => false
-    t.integer  "user_id",                                              :null => false
+    t.integer  "user_id",                           :default => 100,   :null => false
     t.boolean  "involved_personally",               :default => false, :null => false
   end
 
